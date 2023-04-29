@@ -2,20 +2,16 @@ import React from 'react';
 import Header from '../pages/Sheared/Header/Header';
 import Footer from '../pages/Sheared/Footer/Footer';
 import { Container, Row, Col } from 'react-bootstrap';
-import LeftBar from '../pages/Sheared/LeftBar/LeftBar';
 import RightBar from '../pages/Sheared/RightBar/RightBar';
 import { Outlet } from 'react-router-dom';
 
-const Main = () => {
+const NewsLayout = () => {
     return (
         <div>
             <Header></Header>
             <Container>
                 <Row>
-                    <Col sm={3}>
-                        <LeftBar></LeftBar>
-                    </Col>
-                    <Col sm={6}>
+                    <Col sm={9}>
                         <Outlet></Outlet>
                     </Col>
                     <Col sm={3}>
@@ -28,4 +24,4 @@ const Main = () => {
     );
 };
 
-export default Main;
+export default NewsLayout;
