@@ -21,7 +21,7 @@ const LeftBar = () => {
                 {
                     cates.map(cate => {
                         return <p key={cate.id}>
-                            <Link to={`cate/${cate.id}`}
+                            <Link to={`/cate/${cate.id}`}
                                 className='text-secondary text-decoration-none d-block'
                             >{cate.name}</Link>
                         </p>

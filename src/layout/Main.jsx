@@ -5,11 +5,13 @@ import { Container, Row, Col } from 'react-bootstrap';
 import LeftBar from '../pages/Sheared/LeftBar/LeftBar';
 import RightBar from '../pages/Sheared/RightBar/RightBar';
 import { Outlet } from 'react-router-dom';
+import NavigationBar from '../pages/Sheared/NavigationBar/NavigationBar';
 
 const Main = () => {
     return (
         <div>
             <Header></Header>
+            <NavigationBar></NavigationBar>
             <Container>
                 <Row>
                     <Col sm={3}>

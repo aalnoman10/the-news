@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import NewsCard from '../NewsCard/NewsCard';
+import { AuthContext } from '../../../Provider/AurtProvider';
 
 const Cate = () => {
     const { id } = useParams();
     const cateNews = useLoaderData();
+
+    const { user } = useContext(AuthContext);
 
     return (
         <div>
@@ -17,6 +20,7 @@ const Cate = () => {
                     ></NewsCard>
                 )
             }
+            <>{user}</>
         </div>
     );
 };

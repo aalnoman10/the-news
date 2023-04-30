@@ -8,8 +8,6 @@ import { Link } from 'react-router-dom';
 const NewsCard = ({ cateNew }) => {
     const { _id, image_url, title, details, author, rating, total_view } = cateNew
 
-    console.log(cateNew);
-
     return (
         <div>
             <Card className="mb-4">

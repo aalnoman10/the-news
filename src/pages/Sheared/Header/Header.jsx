@@ -1,10 +1,10 @@
 import React from 'react';
 import moment from 'moment';
-import { Container, Button, Navbar, Nav } from 'react-bootstrap';
+import { Container, Button } from 'react-bootstrap';
 import Marquee from 'react-fast-marquee';
-import { Link } from 'react-router-dom';
 
 const Header = () => {
+
     return (
         <Container>
             <div className="text-center">
@@ -18,26 +18,7 @@ const Header = () => {
                     I can be a React component, multiple React components, or just some text.I can be a React component, multiple React components, or just some text.I can be a React component, multiple React components, or just some text.
                 </Marquee>
             </div>
-
-            <Navbar collapseOnSelect expand="lg">
-                <Container>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="mx-auto">
-                            <Nav.Link><Link to='/'>Home</Link></Nav.Link>
-                            <Nav.Link><Link to='/'>About</Link></Nav.Link>
-                            <Nav.Link><Link to='/'>Career</Link></Nav.Link>
-                        </Nav>
-                        <Nav>
-                            <Nav.Link href="#deets">Profile</Nav.Link>
-                            <Nav.Link eventKey={2} href="#memes">
-                                <Button variant="dark">Dark</Button>
-                            </Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
-        </Container>
+        </Container >
     );
 };
 
